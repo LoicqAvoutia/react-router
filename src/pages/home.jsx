@@ -3,7 +3,10 @@ import './home.css'
 const home = ()=>{
     return(
         <>
-        home
+            <div>
+                <h1>benvenuto</h1>
+                <img src="../../public/img-promo.jpg" alt="img-promo" />
+            </div>
         </>
     )
 }
