@@ -1,15 +1,15 @@
 import { NavLink } from 'react-router-dom';
-import home from '../pages/home.jsx';
-import contacs from '../pages/contacs.jsx';
-import products from '../pages/products.jsx';
+import Home from '../pages/home.jsx';
+import Contacs from '../pages/contacs.jsx';
+import Products from '../pages/products.jsx';
 import './layout.css';
 
 const layout = ()=>{
     return(
         <ul>
-            <li><NavLink to={home}>home</NavLink></li>
-            <li><NavLink to={contacs}>contacs</NavLink></li>
-            <li><NavLink to={products}>products</NavLink></li>
+            <NavLink to='/'>home</NavLink>
+            <NavLink to='/contatti'>contacs</NavLink>
+            <NavLink to='/prodotti'>products</NavLink>
         </ul>
     )
 }
