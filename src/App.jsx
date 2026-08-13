@@ -8,6 +8,7 @@ import Layout from './components/layout'
 import Home from './pages/home.jsx'
 import Contacs from './pages/contacs.jsx'
 import Products from './pages/products.jsx'
+import Product from './pages/product.jsx'
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" Component={Home}/>
         <Route path="/contatti" Component={Contacs}/>
         <Route path="/prodotti" element={<Products prodotti={prodotti}/>}/>
+        <Route path="/prodotti/:id" element={<Product prodotti={prodotti}/>}/>
       </Routes>
     </>
   )
