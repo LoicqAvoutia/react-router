@@ -18,6 +18,7 @@ const product = props =>{
             <div key={prodotto.id} className="card">
                 <img src={prodotto.image} alt={prodotto.title} />
                 <h3>{prodotto.title}</h3>
+                <h3>prezzo:{prodotto.price}</h3>
             </div>
         }
         </>
