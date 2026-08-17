@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import './products.css';
 import { Link, useNavigate, useParams } from "react-router";
 
@@ -6,6 +7,7 @@ const products = props =>{
     const navigate = useNavigate();
     const { id } = useParams();
 
+    
     return (
         <>
         {props.prodotti.map(prodotto=>{
